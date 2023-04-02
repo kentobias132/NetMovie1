@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix-like Homepage</title>
+    <script
+      defer
+      src="https://kit.fontawesome.com/e918d10e90.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script defer src="/helper.js"></script> -->
+    <script defer src="/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="genresForm">
+        <label>Choose a Genres</label>
+        <select name="genres" id="genres">
+          <!-- <option value="movie">action</option> -->
+        </select>
+      </form>
+      <button id="playBtn">Let's Play</button>
+      <br />
+      <label for="input">Search your movie</label>
+      <input type="text" name="input" id="movieIput" />
+      <button id="searchBtn">search</button>
+      <h1>Featured Videos</h1>
+      <div class="video-list" id="movieInfo"></div>
+    </div>
+  </body>
+</html>
