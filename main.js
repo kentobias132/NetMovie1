@@ -39,6 +39,12 @@ const getMovieBySearchArray = async () => {
   }
 };
 
+const createMovieCard = () => {
+  const movieCard = document.createElement("div");
+  movieCard.setAttribute("class", "video-card");
+  return movieCard;
+};
+
 const resMovie = async () => {
   clearCurrentMovie();
 
@@ -85,6 +91,8 @@ const getMovies = async () => {
   }
 };
 
+
+
 // const getMovieInfo = async (movie) => {
 //   const movieId = movie.id;
 //   const movieEndpoint = `/movie/${movieId}`;
@@ -114,6 +122,8 @@ const createMoviePoster = (posterPath) => {
 
   return posterImg;
 };
+
+
 
 // Create HTML for movie title
 const createMovieTitle = (title) => {
